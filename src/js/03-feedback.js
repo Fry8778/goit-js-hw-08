@@ -10,7 +10,8 @@ const textarea = document.querySelector('.feedback-form textarea');
 const input = document.querySelector ('.feedback-form input');
 
 const onFormSubmit = (e) => {
-    e.preventDefault();    
+    e.preventDefault(); 
+    formData = {};   
     form.reset();
     console.log(JSON.parse(localStorage.getItem(STORAGE_KEY)));
     localStorage.removeItem(STORAGE_KEY);
@@ -19,6 +20,7 @@ const onFormSubmit = (e) => {
 const onFormInput = (e) => {  
     formData[e.target.name]=e.target.value;     
     localStorage.setItem(STORAGE_KEY, JSON.stringify(formData));
+ 
    
 }
 
