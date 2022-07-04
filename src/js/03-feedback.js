@@ -24,7 +24,7 @@ const onFormInput = (e) => {
    
 }
 
-const  populateTextarea = () => {   
+const populateTextarea = () => {   
     const valuesChanged = JSON.parse(localStorage.getItem(STORAGE_KEY));
     if (!valuesChanged) {
       return;
