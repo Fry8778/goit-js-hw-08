@@ -2,7 +2,7 @@ import {throttle} from 'lodash';
 import '../css/03-feedback.css';
 import '../css/common.css';
 
-let  formData = {};
+let formData = {};
 const STORAGE_KEY = 'feedback-form-state';
 
 const form = document.querySelector('.feedback-form');
